@@ -1,0 +1,34 @@
+---
+title: "Forest Fires in Brazil"
+author: "Wensi Xu"
+Date: "Dec 9th, 2019"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+library("ggplot2")
+library("dplyr")
+source("analysis.R")
+```
+
+## Introduction
+The dataset that I chose is a dataset about forest fires happened in Brazil across years, containing the number of forest fires reported in Brazil by State. The series comprises the period of approximately 10 years (1998 to 2017). Luis Gustavo Modelli updated the dataset to Kaggle on August 24th, 2019. He claimed that the data was obtained from the official website of the Brazilian government and a link to the original dataset was included. This dataset was collected because Brazil has the largest rainforest in the world which is the Amazon rainforest. By collecting and analyzing the data about frequency of forest fire in a time series can help to take action to prevent it.
+
+## Data graphics
+```{r bar chart, echo = FALSE}
+bar_chart <- graph()
+print(bar_chart)
+```
+
+## Discussion
+By looking at the graphs, we can conclude that the most forest fires happened in 2013. From 1998 to 2003, the number of forest fires had been increasing. And then decreased again. However, there was a huge increase between 2008 and 2009. And from 2009 to 2017, I do not see a trend because the total number of forest fires just fluctuated up and down.    
+The stakeholders who might be influenced will be the people living around the Amazon rainforest, the animals living in the rainforest, and all human beings in the world. The people who live near the Amazon rainforest will be impacted because as the fire gets bigger, their hometown may be burnt down. The animals living the rainforest will be impacted because the frequent fire may threaten their lives and burn all their food. All human beings will also be influenced because Amazon rainforest is the largest rainforest in the world, meaning Amazon contributes the most to the air. It absorbs the most carbon dioxide and produces clean oxygen. Without Amazon rainforest, global warming will be more serious and air quality may also be worse.   
+Forest fires are commonly caused by naturally occurring events; such as lighting strikes or over aridity. However, there are more and more cases that human activities can lead to forest fires; such as, cropping or grazing by farmers and deforesting by loggers. These human activities probably cause more forest fires than natural events do. By understanding this dataset, we should be aware that deforesting and over grazing may lead to serious outcomes. To save and protect the environment, we should avoid things like that.    
+[News about Amazon forest fire](https://www.bbc.com/news/world-latin-america-49433767)
+
+## Reflection
+According to my analysis of the time series data, I learn that while the total number of forest fires fluctuate in recent years, there is no noticable decrease. Many reasons may result to forest fires; such as, regional drought, lightning strikes, over grazing or deforesting and some events can be avoided. To decrease the number of forest fires and protect our environment, the government and also all of us should take action and try to improve our environment.   
+Some new questions that I have are:
+
+* Have the government taken any action to avoid forest fires?   
+* When forest fire happen, will it be more efficient if we cut down the trees near the fire or try to put out the fire?
